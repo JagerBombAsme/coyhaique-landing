@@ -44,6 +44,11 @@ El cliente solo ejecuta `POST /rest/v1/contact_requests_v2` con `request_type`, 
 - Falta el borrador legal de Franco Garín de privacidad y de términos. Se incluyen estructuras provisionales con `[PENDIENTE: texto revisado]`; **no publicarlas como textos legales definitivos** antes de revisión y aprobación de Diego Del Río.
 - Agregar imágenes reales y atribución de origen, licencia y permiso.
 - Verificar en dispositivo y en GitHub Pages todos los casos de aceptación (ver `AUTOEVALUACION.md`).
-- Activar y probar RLS, límites y tipos de columnas de Supabase con credenciales públicas y de pruebas.
+
+
 - Confirmar cronograma y horario de mantenimiento.
 - Verificar vigencia legal con responsable jurídico antes de publicar.
+
+Procedencia de la publicación. La landing fue preparada por Franco Garín y enviada en formato ZIP a Diego Del Río, 
+quien la publicó el 05-11-2026 desde la cuenta del repositorio (commits 9d159de, 146edf1, 2b8af40 y 13edaf3). Desde esta fecha, 
+los cambios de contenido los sube Franco desde su propia cuenta, en ramas de trabajo, y Diego revisa antes de fusionar a main.
