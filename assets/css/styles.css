@@ -1,0 +1,433 @@
+:root {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  color: #121416;
+  background: #e8ebed;
+  line-height: 1.55;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+a {
+  color: #1667a3;
+}
+a:hover {
+  text-decoration-thickness: 2px;
+}
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+button,
+a,
+input,
+textarea,
+select {
+  touch-action: manipulation;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid #1667a3;
+  outline-offset: 4px;
+}
+.skip {
+  position: absolute;
+  top: -100px;
+  left: 12px;
+  background: white;
+  padding: 12px;
+  z-index: 10;
+}
+.skip:focus {
+  top: 12px;
+}
+.wrap {
+  width: min(1180px, calc(100% - 36px));
+  margin-inline: auto;
+}
+.top {
+  background: #121416;
+  color: white;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-block: 18px;
+  flex-wrap: wrap;
+}
+.nav a {
+  color: white;
+}
+.nav-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.brand {
+  font-weight: 900;
+  text-decoration: none;
+  letter-spacing: -0.04em;
+}
+.hero {
+  background-color: #121416;
+  background-image:
+    linear-gradient(180deg, rgba(18, 20, 22, 0) 70%, #121416 100%),
+    linear-gradient(
+      90deg,
+      rgba(18, 20, 22, 0.96) 0%,
+      rgba(18, 20, 22, 0.88) 34%,
+      rgba(18, 20, 22, 0.45) 62%,
+      rgba(18, 20, 22, 0.1) 100%
+    ),
+    url("../img/cultura_gaucho.jpg");
+  background-size: cover;
+  background-position: center, center, 70% center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 70px 0 88px;
+}
+.hero-logo {
+  display: block;
+  width: clamp(180px, 32vw, 360px);
+  height: auto;
+  margin-bottom: 28px;
+}
+.eyebrow {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  font-weight: 800;
+}
+.display,
+h1,
+h2 {
+  line-height: 1.03;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+h1 {
+  font-size: clamp(3rem, 10vw, 7.4rem);
+  max-width: 1000px;
+  margin: 0.24em 0;
+}
+h2 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin: 0.2em 0 0.5em;
+}
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+p {
+  max-width: 78ch;
+}
+.lead {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  max-width: 56ch;
+}
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 26px 0;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 22px;
+  border: 0;
+  border-radius: 999px;
+  background: #3fa9f5;
+  color: #121416;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn.light {
+  background: white;
+}
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  background: #d3d8dc;
+  color: #31393e;
+  cursor: not-allowed;
+}
+.section {
+  padding: 72px 0;
+}
+.section.dark {
+  background: #121416;
+  color: white;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 245px), 1fr));
+  gap: 16px;
+}
+.card {
+  background: white;
+  color: #121416;
+  border-radius: 20px;
+  padding: 26px;
+  min-width: 0;
+}
+.card h3 {
+  margin-top: 0;
+}
+.dark .card {
+  background: #252a2e;
+  color: white;
+}
+.metric {
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  color: #3fa9f5;
+}
+.placeholder {
+  min-height: 240px;
+  border: 2px dashed #738089;
+  border-radius: 24px;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  text-align: center;
+}
+.notice {
+  background: #fff;
+  padding: 20px 24px;
+  border-radius: 20px;
+}
+.small {
+  font-size: 0.9rem;
+  color: #5e676d;
+}
+.dark .small {
+  color: #cdd5db;
+}
+.full {
+  width: 100%;
+}
+.form {
+  max-width: 700px;
+  background: white;
+  border-radius: 20px;
+  padding: clamp(20px, 4vw, 38px);
+}
+.field {
+  margin-bottom: 19px;
+}
+.field label {
+  display: block;
+  font-weight: 750;
+  margin-bottom: 7px;
+}
+.field input:not([type="checkbox"]),
+.field textarea,
+.field select {
+  display: block;
+  width: 100%;
+  border: 2px solid #677178;
+  border-radius: 10px;
+  background: #fff;
+  padding: 12px;
+  min-height: 48px;
+  color: #121416;
+}
+.field textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+.error {
+  color: #b3261e;
+  font-weight: 650;
+  min-height: 1em;
+  font-size: 0.92rem;
+}
+.field [aria-invalid="true"] {
+  border-color: #b3261e;
+}
+.field .hint {
+  font-size: 0.85rem;
+  color: #5e676d;
+}
+.check {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.check input {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  accent-color: #1667a3;
+}
+.status {
+  font-weight: 700;
+  min-height: 1.6em;
+}
+.status.fail {
+  color: #b3261e;
+}
+.status.ok {
+  color: #17603c;
+}
+.hp {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.table-scroll {
+  overflow-x: auto;
+}
+.levels {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  color: #121416;
+  font-size: 0.89rem;
+}
+.levels th,
+.levels td {
+  text-align: left;
+  vertical-align: top;
+  padding: 13px;
+  border-bottom: 1px solid #ced2d4;
+}
+.levels th {
+  background: #dfe6e9;
+}
+.footer {
+  background: #121416;
+  color: white;
+  padding: 40px 0;
+}
+.footer a {
+  color: white;
+}
+.footlinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.logo-placeholder {
+  display: inline-flex;
+  width: 110px;
+  height: 96px;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed #88939a;
+  font-size: 0.75rem;
+  max-width: 100%;
+  text-align: center;
+}
+.qr svg {
+  max-width: 100%;
+  height: auto;
+  background: white;
+  padding: 8px;
+}
+.center {
+  align-items: center;
+}
+.legal {
+  max-width: 850px;
+}
+.legal h1 {
+  font-size: clamp(2.4rem, 7vw, 4.5rem);
+}
+.legal h2 {
+  font-size: 1.7rem;
+  margin-top: 1.7em;
+}
+.legal li {
+  margin: 0.55em 0;
+}
+.pill {
+  display: inline-block;
+  background: #dbe6eb;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 750;
+}
+.picture-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  display: block;
+}
+.muted-box {
+  background: #fff;
+  border-radius: 20px;
+  padding: 22px;
+}
+.break {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 600px) {
+  .section {
+    padding: 54px 0;
+  }
+  .hero {
+    padding: 54px 0;
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(18, 20, 22, 0.55) 0%,
+        rgba(18, 20, 22, 0.85) 45%,
+        rgba(18, 20, 22, 0.97) 100%
+      ),
+      url("../img/cultura_gaucho.jpg");
+    background-position: center, 45% center;
+  }
+  .hero-logo {
+    width: min(220px, 60vw);
+    margin-bottom: 20px;
+  }
+  .wrap {
+    width: min(100% - 28px, 1180px);
+  }
+  .levels {
+    font-size: 0.78rem;
+  }
+  .levels th,
+  .levels td {
+    padding: 9px;
+  }
+  .nav-links {
+    gap: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *:before,
+  *:after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

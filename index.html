@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="es-CL">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src https://mijtzoqfuqqxymexewoh.supabase.co; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+    />
+    <meta name="theme-color" content="#121416" />
+    <meta
+      name="description"
+      content="Coyhaique BaseCamp: información turística de Coyhaique y su entorno, Región de Aysén."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Coyhaique BaseCamp" />
+    <meta property="og:title" content="Coyhaique BaseCamp" />
+    <meta
+      property="og:description"
+      content="Información turística de Coyhaique y su entorno."
+    />
+    <meta property="og:url" content="" />
+    <link rel="canonical" href="" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Coyhaique BaseCamp | Turismo en Aysén</title>
+  </head>
+  <body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+    <header class="top">
+      <div class="wrap nav">
+        <a class="brand" href="index.html">COYHAIQUE BASECAMP</a>
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="index.html#funciones">Funciones</a
+          ><a href="index.html#descarga">Descarga</a
+          ><a href="index.html#solicitud">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <main id="contenido">
+      <section class="hero">
+        <div class="wrap">
+          <img
+            class="hero-logo"
+            src="assets/img/logo-bc-blanco.svg"
+            alt=""
+            width="1457"
+            height="758"
+          />
+          <p class="eyebrow">AYSÉN · PATAGONIA</p>
+          <h1>COYHAIQUE BASECAMP</h1>
+          <p class="lead">
+            Explora Coyhaique y su entorno con información turística reunida en
+            una aplicación Android.
+          </p>
+          <div class="actions">
+            <a class="btn" href="#descarga">Descargar APK</a
+            ><a class="btn light" href="#prestadores">Soy prestador</a>
+          </div>
+        </div>
+      </section>
+      <section class="section dark" aria-labelledby="problema">
+        <div class="wrap">
+          <p class="eyebrow">EL DESAFÍO</p>
+          <h2 id="problema">INFORMACIÓN DISPERSA. CONECTIVIDAD LIMITADA.</h2>
+          <p>
+            Fuera de zonas urbanas la señal puede fallar. Según la encuesta del
+            proyecto (31 participantes):
+          </p>
+          <div class="grid">
+            <article class="card">
+              <div class="metric">29 de 31</div>
+              <p>personas (94 %) consultan dos o más fuentes.</p>
+            </article>
+            <article class="card">
+              <div class="metric">28 de 31</div>
+              <p>
+                personas (90 %) declararon dificultades de conexión fuera de
+                zonas urbanas.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="funciones" class="section">
+        <div class="wrap">
+          <p class="eyebrow">QUÉ OFRECE</p>
+          <h2>EXPLORA CON INFORMACIÓN CLARA</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Explora</h3>
+              <p>Categorías, fichas y búsqueda de lugares y actividades.</p>
+            </article>
+            <article class="card">
+              <h3>Ubícate</h3>
+              <p>Mapa, ubicación y rutas referenciales.</p>
+            </article>
+            <article class="card">
+              <h3>Planifica</h3>
+              <p>
+                Itinerarios por intereses, tiempo y distancia, sin necesidad de
+                cuenta. Guardarlos requiere iniciar sesión.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Consulta sin conexión</h3>
+              <p>
+                Catálogo descargable para consultar sus fichas sin conexión. No
+                incluye mapas completos sin conexión.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Transporte</h3>
+              <p>
+                Información de traslados y preparación de solicitudes con QR. La
+                aplicación no reserva ni procesa pagos.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Viaja informado</h3>
+              <p>
+                Información práctica y preventiva; fichas con fuente y fecha de
+                verificación.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Dos idiomas</h3>
+              <p>Español e inglés.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="capturas" class="section dark">
+        <div class="wrap">
+          <p class="eyebrow">LA APLICACIÓN</p>
+          <h2>CONOCE LA EXPERIENCIA</h2>
+          <div class="placeholder">
+            [PENDIENTE: capturas reales de la aplicación]
+          </div>
+        </div>
+      </section>
+      <section id="descarga" class="section">
+        <div class="wrap">
+          <p class="eyebrow">ANDROID</p>
+          <h2>LLEVA BASECAMP CONTIGO</h2>
+          <p>
+            Versión de la aplicación: <strong id="apk-version">1.0.0</strong>.
+            Requiere Android 7.0 o superior para instalar. Validación prevista
+            en dispositivos desde Android 11.
+          </p>
+          <div class="actions">
+            <a class="btn" id="apk-link" aria-disabled="true"
+              >Descarga disponible próximamente</a
+            >
+          </div>
+          <div id="qr-section" hidden>
+            <div id="qr-code" class="qr"></div>
+            <p>
+              Escanea este código QR para abrir el mismo enlace de descarga.
+            </p>
+          </div>
+          <p class="small">
+            Para instalar un APK fuera de Google Play: descarga el archivo desde
+            la fuente indicada, ábrelo en Android y autoriza la instalación
+            desde esa fuente si el dispositivo lo solicita. Comprueba el origen
+            antes de continuar.
+          </p>
+        </div>
+      </section>
+      <section id="prestadores" class="section dark">
+        <div class="wrap">
+          <p class="eyebrow">PARA ESTABLECIMIENTOS</p>
+          <h2>PRÓXIMAMENTE TU LOCAL AQUÍ</h2>
+          <p>
+            Solicita la incorporación mediante el formulario. Las fichas se
+            validan con el establecimiento o con una fuente pública y muestran
+            esa referencia. Para alojamientos y turismo aventura, se verifica
+            inscripción en Sernatur.
+          </p>
+          <p>
+            Los prestadores no editan directamente sus fichas: pueden solicitar
+            cambios por el formulario. Compromiso de respuesta: 10 días hábiles.
+            Retiro de una ficha: 2 días hábiles.
+          </p>
+          <a
+            class="btn"
+            href="index.html?tipo=incorporacion_prestador#solicitud"
+            >Solicitar incorporación</a
+          >
+        </div>
+      </section>
+      <section id="niveles" class="section">
+        <div class="wrap">
+          <p class="eyebrow">COMPROMISOS</p>
+          <h2>NIVELES DE SERVICIO</h2>
+          <div class="table-scroll">
+            <table class="levels">
+              <thead>
+                <tr>
+                  <th>Servicio</th>
+                  <th>Compromiso u objetivo</th>
+                  <th>Restablecimiento</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Consulta sin cuenta</td>
+                  <td>100 % de las funciones de consulta</td>
+                  <td>48 horas</td>
+                </tr>
+                <tr>
+                  <td>Servicio en línea</td>
+                  <td>≥ 99,0 % mensual, desde el lanzamiento</td>
+                  <td>48 horas</td>
+                </tr>
+                <tr>
+                  <td>Contenido descargado</td>
+                  <td>≥ 95 % de las fichas se abre sin conexión</td>
+                  <td>48 horas</td>
+                </tr>
+                <tr>
+                  <td>Pérdida de conexión</td>
+                  <td>100 % de las funciones locales sigue operando</td>
+                  <td>48 horas</td>
+                </tr>
+                <tr>
+                  <td>Mapas y rutas</td>
+                  <td>
+                    100 % de las funciones sin mapa sigue operando si Mapbox
+                    falla
+                  </td>
+                  <td>48 horas o 10 días hábiles</td>
+                </tr>
+                <tr>
+                  <td>Rendimiento</td>
+                  <td>Promedio de 3 s o menos en categoría y ficha</td>
+                  <td>10 días hábiles</td>
+                </tr>
+                <tr>
+                  <td>Compatibilidad</td>
+                  <td>100 % de la matriz de pruebas desde Android 11</td>
+                  <td>10 días hábiles</td>
+                </tr>
+                <tr>
+                  <td>Privacidad de la cuenta</td>
+                  <td>100 % de los accesos a datos ajenos rechazado</td>
+                  <td>48 horas si hay exposición; si no, 10 días hábiles</td>
+                </tr>
+                <tr>
+                  <td>Información verificada</td>
+                  <td>
+                    100 % de las fichas activas con fuente y fecha vigente
+                  </td>
+                  <td>5 días hábiles</td>
+                </tr>
+                <tr>
+                  <td>Prestadores</td>
+                  <td>Respuesta en 10 días hábiles; retiro en 2</td>
+                  <td>10 días hábiles</td>
+                </tr>
+                <tr>
+                  <td>Respaldo</td>
+                  <td>Pérdida máxima de 24 horas de datos</td>
+                  <td>48 horas</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            Estos son compromisos y objetivos del servicio, no resultados
+            comprobados. Las metas están en validación antes del lanzamiento de
+            la versión 1.0. El servicio es gratuito: los incumplimientos activan
+            un plan de acción, sin compensación económica.
+          </p>
+          <p>
+            No se considera incumplimiento: caídas documentadas de Supabase o
+            Mapbox; mantenciones avisadas con al menos 48 horas; falta de
+            conexión del dispositivo; uso en Android inferior a 7.0 o
+            dispositivos modificados. Horarios de mantención:
+            <strong>[PENDIENTE: horario aprobado]</strong>.
+          </p>
+          <p>
+            Consulta los <a href="terminos.html">términos del servicio</a> para
+            conocer el contexto.
+          </p>
+        </div>
+      </section>
+      <section id="avisos" class="section dark">
+        <div class="wrap">
+          <p class="eyebrow">ESTADO DEL SERVICIO</p>
+          <h2>AVISOS</h2>
+          <div class="notice" id="service-notice">Sin avisos vigentes</div>
+          <p class="small">
+            Avisos y mantenciones se actualizan manualmente desde config.js.
+          </p>
+        </div>
+      </section>
+      <section class="section" id="solicitud">
+        <div class="wrap">
+          <p class="eyebrow">CONTACTO</p>
+          <h2>ENVÍA UNA SOLICITUD</h2>
+          <p>
+            Solicita la incorporación o corrección de fichas, reporta errores o
+            pide la eliminación de tu cuenta.
+          </p>
+          <form id="request-form" class="form" novalidate>
+            <div class="field">
+              <label for="request-type">Tipo de solicitud *</label
+              ><select
+                id="request-type"
+                name="request_type"
+                required
+                aria-describedby="type-error"
+              >
+                <option value="">Selecciona una opción</option>
+                <option value="incorporacion_prestador">
+                  Incorporar mi establecimiento
+                </option>
+                <option value="correccion">Corregir una ficha</option>
+                <option value="retiro_ficha">Retirar una ficha</option>
+                <option value="reporte_error">Reportar un error</option>
+                <option value="eliminacion_cuenta">Eliminar mi cuenta</option>
+                <option value="otro">Otro</option>
+              </select>
+              <div id="type-error" class="error"></div>
+            </div>
+            <div id="place-field" class="field" hidden>
+              <label for="place-id">Ficha (opcional)</label
+              ><select id="place-id" name="place_id">
+                <option value="">Sin ficha específica</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="email">Correo electrónico *</label
+              ><input
+                type="email"
+                id="email"
+                name="email"
+                maxlength="254"
+                minlength="6"
+                required
+                autocomplete="email"
+                aria-describedby="email-error"
+              />
+              <div id="email-error" class="error"></div>
+            </div>
+            <div class="field">
+              <label for="message">Mensaje *</label
+              ><textarea
+                id="message"
+                name="message"
+                required
+                aria-describedby="message-count message-error"
+              ></textarea>
+              <div class="hint" id="message-count" aria-live="polite">
+                0 / 1000 caracteres
+              </div>
+              <div id="message-error" class="error"></div>
+            </div>
+            <div class="hp" aria-hidden="true">
+              <label for="website">Deja este campo vacío</label
+              ><input
+                id="website"
+                name="website"
+                autocomplete="off"
+                tabindex="-1"
+              />
+            </div>
+            <div class="field">
+              <label class="check" for="consent"
+                ><input
+                  type="checkbox"
+                  name="consent"
+                  id="consent"
+                  aria-describedby="consent-error"
+                /><span
+                  >Autorizo el uso de mi correo y mensaje para atender esta
+                  solicitud. Los datos se eliminan 90 días después de cerrarla.
+                  Más información en la
+                  <a href="privacidad.html">política de privacidad</a>.</span
+                ></label
+              >
+              <div id="consent-error" class="error"></div>
+            </div>
+            <button type="submit" class="btn" id="submit-request">
+              Enviar solicitud
+            </button>
+            <p
+              id="form-status"
+              class="status"
+              role="status"
+              aria-live="polite"
+            ></p>
+            <p class="small">Campos marcados con * son obligatorios.</p>
+            <p id="support-line" class="small" hidden>
+              Correo alternativo: <a id="support-email" href="#" hidden></a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrap">
+        <strong>COYHAIQUE BASECAMP</strong>
+        <p>Proyecto de Título, INACAP.</p>
+        <div class="footlinks">
+          <a href="privacidad.html">Privacidad</a
+          ><a href="terminos.html">Términos</a
+          ><a href="eliminar-cuenta.html">Eliminar cuenta</a>
+        </div>
+        <p class="small">
+          Versión de la landing: <span id="landing-version">1.0.0</span>
+        </p>
+      </div>
+    </footer>
+    <script src="config.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+    <script src="assets/js/qr.js" defer></script>
+    <script src="assets/js/form.js" defer></script>
+  </body>
+</html>
