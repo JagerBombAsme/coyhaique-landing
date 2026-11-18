@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coyhaique BaseCamp · Confirmación de cuenta</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #E8EBED;
+      color: #121416;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main {
+      max-width: 480px;
+      margin: 24px;
+      padding: 32px 28px;
+      background: #FFFFFF;
+      border-radius: 24px;
+    }
+    h1 {
+      margin: 0 0 16px;
+      font-size: 28px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+    }
+    p { margin: 0 0 12px; line-height: 1.5; }
+    .lang { color: #5E676D; font-size: 14px; }
+    .tag {
+      display: inline-block;
+      margin-bottom: 12px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: #1667A3;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="tag">AYSÉN · COYHAIQUE BASECAMP</div>
+
+    <section id="ok">
+      <h1>Cuenta confirmada</h1>
+      <p>Tu correo fue confirmado. Vuelve a la aplicación Coyhaique BaseCamp e inicia sesión con tus datos.</p>
+      <p class="lang">Your email has been confirmed. Return to the Coyhaique BaseCamp app and sign in with your details.</p>
+    </section>
+
+    <section id="expired" hidden>
+      <h1>Enlace vencido</h1>
+      <p>Este enlace ya no es válido. Vuelve a la aplicación e intenta registrarte de nuevo o pide un nuevo correo de confirmación.</p>
+      <p class="lang">This link is no longer valid. Return to the app and sign up again or request a new confirmation email.</p>
+    </section>
+  </main>
+
+  <script>
+    // Supabase devuelve errores en el fragmento de la URL (por ejemplo error_code=otp_expired).
+    const params = new URLSearchParams(window.location.hash.replace(/^#/, ''));
+    if (params.get('error') || params.get('error_code')) {
+      document.getElementById('ok').hidden = true;
+      document.getElementById('expired').hidden = false;
+    }
+  </script>
+</body>
+</html>
