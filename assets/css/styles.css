@@ -214,6 +214,7 @@ p {
 }
 .notice {
   background: #fff;
+  color: #121416;
   padding: 20px 24px;
   border-radius: 20px;
 }
@@ -325,6 +326,9 @@ p {
 }
 .footer a {
   color: white;
+}
+.footer .small {
+  color: #cdd5db;
 }
 .footlinks {
   display: flex;
