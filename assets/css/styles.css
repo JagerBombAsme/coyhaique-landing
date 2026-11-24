@@ -382,6 +382,16 @@ p {
   border-radius: 24px;
   display: block;
 }
+.picture-grid figure {
+  margin: 0;
+}
+.picture-grid figcaption {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
 .muted-box {
   background: #fff;
   border-radius: 20px;
